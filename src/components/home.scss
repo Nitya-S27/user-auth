@@ -12,7 +12,17 @@ $font-family2: "Sacramento", cursive;
     font-size: 3.5rem;
     color: white;
     font-family: $font-family1;
-    background-color: rgba($color: #000000, $alpha: 0.4);
+    // background-color: rgba($color: #000000, $alpha: 0.4);
+    text-shadow: 3px 3px 10px #000000;
+    @media (max-width: 1400px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 1024px) {
+      font-size: 2.7rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 2.5rem;
+    }
   }
   button {
     margin: 3% auto;
@@ -26,9 +36,17 @@ $font-family2: "Sacramento", cursive;
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {
-      background: transparent;
+      background: rgba($color: #000000, $alpha: 0.5);
       border: 1px solid red;
-      color: red;
+      color: white;
+    }
+    @media (max-width: 1024px) {
+      padding: 1.5% 4.1%;
+      font-size: 1.7rem;
+    }
+    @media (max-width: 600px) {
+      padding: 2% 5%;
+      font-size: 1.5rem;
     }
   }
 }

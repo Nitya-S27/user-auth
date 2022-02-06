@@ -4,7 +4,7 @@ import axios from "axios";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
-import "./login.scss";
+import "./styles.scss";
 
 const Login = () => {
   const [isLoading, setIsLoading] = useState(false);

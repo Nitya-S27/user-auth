@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
-import "./signUp.scss";
+import "./styles.scss";
 
 const SignUp = () => {
   const [isLoading, setIsLoading] = useState(false);
