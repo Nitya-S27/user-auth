@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
@@ -103,8 +103,8 @@ const SignUp = () => {
             autocomplete="off"
             required
           />
-
           <button type="submit">SignUp</button>
+          <Link to="/login">Already Registered? Login</Link>
         </form>
       )}
     </div>
